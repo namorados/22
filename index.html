@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nosso Amor ❤️</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
@@ -112,14 +112,14 @@
   <div class="section" id="home">
     <h1>Feliz Dia dos Namorados! ❤️</h1>
     <p>Nosso amor merece ser celebrado...</p>
-    <img src="https://via.placeholder.com/500x300?text=Foto+da+gente+na+capa" alt="Foto do Casal na Capa">
+    <img src="casal.jpg" alt="Foto da Capa">
     <a href="#story" class="btn">Clique e veja nossa história</a>
   </div>
 
   <!-- Página 2 - História -->
   <div class="section" id="story">
     <h1>Nossa História</h1>
-    <img src="https://via.placeholder.com/500x300?text=Foto+história" alt="Foto do Casal na História">
+    <img src="fotos/historia.jpg" alt="Foto da História">
     <div id="typed-text"></div>
     <a href="#message" class="btn">Veja minha mensagem especial</a>
   </div>
@@ -127,7 +127,7 @@
   <!-- Página 3 - Mensagem -->
   <div class="section" id="message">
     <h1>Para você, meu amor...</h1>
-    <img src="https://via.placeholder.com/500x300?text=Foto+final" alt="Foto Final do Casal">
+    <img src="fotos/final.jpg" alt="Foto Final">
     <p id="secret-message" style="display: none;">
       Esta é a mensagem mais importante... Eu te amo mais que tudo!
     </p>
@@ -135,6 +135,7 @@
     <a href="#home" class="btn">Voltar ao início</a>
   </div>
 
+  <!-- Scripts -->
   <script>
     // Corações flutuantes
     function createHeart() {
@@ -148,8 +149,15 @@
     }
     setInterval(createHeart, 300);
 
-    // Efeito de digitação
-    const text = "Aqui você conta a história do casal... Como se conheceram, momentos especiais e por que esse amor é único! Edite este texto com suas palavras.";
+    // Revelar mensagem
+    function revealMessage() {
+      document.getElementById("secret-message").style.display = "block";
+    }
+  </script>
+
+  <script src="js/texto.js"></script>
+  <script>
+    // Efeito de digitação com texto externo
     let i = 0;
     function typeWriter() {
       if (i < text.length) {
@@ -159,11 +167,6 @@
       }
     }
     typeWriter();
-
-    // Revelar mensagem secreta
-    function revealMessage() {
-      document.getElementById("secret-message").style.display = "block";
-    }
   </script>
 </body>
 </html>
