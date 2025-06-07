@@ -94,6 +94,15 @@
       cursor: pointer;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
+    /* Novo estilo para o texto da história */
+    .historia-texto {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 600px;
+      margin: 20px auto;
+      text-align: justify;
+    }
   </style>
 </head>
 <body>
@@ -116,11 +125,27 @@
     <a href="#story" class="btn">Clique e veja nossa história</a>
   </div>
 
-  <!-- Página 2 - História -->
+  <!-- Página 2 - História (MODIFICADA) -->
   <div class="section" id="story">
     <h1>Nossa História</h1>
     <img src="fotos/historia.jpg" alt="Foto da História">
-    <div id="typed-text"></div>
+    
+    <!-- ÁREA DE TEXTO EDITÁVEL -->
+    <div class="historia-texto">
+      <p>Tudo começou em [ano], quando nos encontramos pela primeira vez em [local]. 
+      Eu lembro como se fosse hoje... [descreva a primeira impressão ou momento especial].</p>
+      
+      <p>Com o tempo, nosso amor foi crescendo através de [mencione experiências importantes]. 
+      Cada momento juntos, como [cite exemplos de momentos marcantes], só fortaleceu nossa conexão.</p>
+      
+      <p>O que mais me encanta em você é [liste qualidades ou coisas especiais]. 
+      Você me faz sentir [descreva sentimentos] todos os dias.</p>
+      
+      <p>Esta é apenas o começo da nossa jornada, e mal posso esperar para viver 
+      muitos outros capítulos ao seu lado. Te amo mais que tudo!</p>
+    </div>
+    <!-- FIM DA ÁREA EDITÁVEL -->
+    
     <a href="#message" class="btn">Veja minha mensagem especial</a>
   </div>
 
